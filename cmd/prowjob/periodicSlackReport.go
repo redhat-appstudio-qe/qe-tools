@@ -35,7 +35,7 @@ func removeANSIEscapeSequences(text string) string {
 }
 
 func fetchTextContent(url string) (string, error) {
-	// #nosec G107
+	// #nosec G107,G704
 	resp, err := http.Get(url)
 	if err != nil {
 		return "", fmt.Errorf("error fetching the webpage: %w", err)
