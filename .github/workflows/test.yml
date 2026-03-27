@@ -36,7 +36,7 @@ jobs:
         run: make test
 
       - name: Upload unit test coverage to Codecov
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v6
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           url: https://codecov-codecov.apps.rosa.konflux-qe.zmr9.p3.openshiftapps.com
